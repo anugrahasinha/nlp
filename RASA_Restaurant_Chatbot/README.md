@@ -1,8 +1,8 @@
-#------------------------------------------------#
-# Type    : Rasa Chat Bot Case Study             # 
-# Author  : Anugraha Sinha                       #
-#------------------------------------------------#
-#### IMPORTANT NOTE TEAM ####
+#### Type    : Rasa Chat Bot
+#### Author  : Anugraha Sinha
+#### Email   : anugraha.sinha[at]gmail[dot]com
+
+#### IMPORTANT NOTE ####
     Slack bot integration is working properly, with this code.
     However, there was problem which is similar to https://github.com/RasaHQ/rasa_core/issues/471
     And therefore, the chat bot integration details are limited in this README file.
@@ -18,14 +18,14 @@
     The above models work as the default models for chatbot to run under local execution format
     until, a re-learning is fired. Please check below for detailed explanation.
     
-Preface:
+#### Preface:
     This case study submission brings forth following important enhancement over existing framework
     shared for restaurant search
     1. Flexibility to choose budget
     2. Sending details over mail
     3. Responding to complex inquiries and intents.
 
-Directory Structure:
+#### Directory Structure:
     \_
     \_\_chatBotMain.py     # Main execution file, please see details below #
     \_\_core               # Code specific to rasa core training 
@@ -37,7 +37,7 @@ Directory Structure:
     \_\_slack              # code specific to slack integration
     
     
-Usage:
+#### Usage:
     Please make sure that all requirements mentioned in the requirements file are satisfied.
     The based folder (where this readme file is present) consists of the mail file "chatBotMain.py"
     The code has been made compatible with Python 3.6+ version. The main file will provide a usage help
@@ -64,7 +64,7 @@ Usage:
     2. For building customized models in your own location (NLU Model)
     [user@localhost code]~ python chatBotMain.py train-rasa-nlu
     
-    ## PLEASE NOTE ##
+#### NOTE
     If you run this, a new model would be trained and etc/config.ini would be automatically updated as per directory location of your system.
     
     3. For building customer model in your own location (RASA CORE model)
@@ -91,19 +91,19 @@ Usage:
     
     PORT 5004
     
-    # PLEASE NOTE #
+#### NOTE
     You will have to start the ngrok extension separately for forwarding port 5004 to public IP.
     Post that the new public URL needs to entered in SLACK APP configuration page also.
     
     
-    #### IMPORTANT NOTE ####
+#### IMPORTANT NOTE
     Slack bot integration is working properly, with this code.
     However, we encountered the problem mentioned in https://github.com/RasaHQ/rasa_core/issues/471
     And therefore, chat bot integration video and details are limited in this README file.
     
     
-# Example for local chat bot execution #
-    [anugraha.sinha.DLLT1872] ➤ python3 chatBotMain.py run-chatbot-local
+#### Example for local chat bot execution
+    [anugraha@localhost ~] python3 chatBotMain.py run-chatbot-local
     Using TensorFlow backend.
     2018-10-28_22:20:47 : ChatBot : Message : Log File = C:\Users\anugraha.sinha\Documents\MobaXterm\slash\tmp\ChatBot.log
     Bot loaded. Type a message and press enter:
