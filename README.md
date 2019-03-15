@@ -1,5 +1,5 @@
-# nlp
-NLP Based Experiments using python NLTK
+# Natural Language Processing
+NLP Based Experiments using python NLTK and other libraries.
 
 What all is available
 1. POS Tagger using Viterbi Heuristic (HMM - Hidden Markov Modelling Technique)
